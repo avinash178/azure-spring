@@ -1,0 +1,58 @@
+insert into user_roles values(11,'admin','ADMIN');
+
+insert into users values(1,'12345678','admin','admin@gmail.com','jack',false,'maa','honk kong','$2a$10$NNcJ4.o1e8bEZdEXcCfw2eZhBClVqLb71wH6h5EWL0SWXHPOIalti',8978657865,'admin',11);
+
+
+
+insert into user_roles values(12,'java','TEACHER');
+
+insert into users values(2,'123457898','computer science','nikam@gmail.com','sujit',false,'nikam','navi mumbai','$2a$10$XAH6AJjp7VRWAq7/bCud5utyNChUTtEQ6VtbSSK8ogI5BthvIvGaW',9876543223,'nikam@123',12);
+
+
+
+create table usersdata(
+user_id int primary key,
+uidnumber varchar(20),
+department_name varchar(20),
+email varchar(20),
+is_locked boolean,
+last_name varchar(20),
+location varchar(20),
+password varchar(20),
+user_name varchar(20),
+role_id
+
+
+
+
+CREATE TABLE IF NOT EXISTS public.users
+(
+    user_id bigint NOT NULL,
+    uidnumber character varying(255) COLLATE pg_catalog."default",
+    department_name character varying(255) COLLATE pg_catalog."default",
+    email character varying(255) COLLATE pg_catalog."default",
+    first_name character varying(255) COLLATE pg_catalog."default",
+    is_locked boolean NOT NULL,
+    last_name character varying(255) COLLATE pg_catalog."default",
+    location character varying(255) COLLATE pg_catalog."default",
+    password character varying(255) COLLATE pg_catalog."default",
+    phone_number bigint NOT NULL,
+    user_name character varying(255) COLLATE pg_catalog."default",
+    role_id bigint,
+    CONSTRAINT users_pkey PRIMARY KEY (user_id),
+    CONSTRAINT fkh555fyoyldpyaltlb7jva35j2 FOREIGN KEY (role_id)
+        REFERENCES public.user_roles (role_id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.users
+    OWNER to postgres;
+
+
+
+
+
+
