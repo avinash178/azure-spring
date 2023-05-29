@@ -13,12 +13,12 @@
 	<groupId>com.eom</groupId>
 	<artifactId>poc </artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging> 
+	<!-- <packaging>war</packaging>  -->
 	<name>VodaEomSample</name>
 	<description>poc in vodafone eom</description>
 	<properties>
 		<java.version>17</java.version>
-		<start-class>com.eom.VodaEomSampleApplication</start-class> 
+		<!-- <start-class>com.eom.VodaEomSampleApplication</start-class>  -->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -29,11 +29,11 @@
 					<groupId>org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-logging</artifactId>
 				</exclusion>
-				 <exclusion>
+				 <!-- <exclusion>
 					<groupId> org.springframework.boot</groupId>
 					<artifactId>spring-boot-starter-tomcat</artifactId>
-				</exclusion>
-			</exclusions> 
+				</exclusion>-->
+			</exclusions>  
 		</dependency>
 		
 		<dependency>

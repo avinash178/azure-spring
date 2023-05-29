@@ -17,11 +17,13 @@ public class VodaEomSampleApplication extends SpringBootServletInitializer{
 		}
 	 
 	 
-	 // this is for create war file and run it on external tomcat 
-	 @Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		return builder.sources(VodaEomSampleApplication.class);
-	}
+		/*
+		 * // this is for create war file and run it on external tomcat
+		 * 
+		 * @Override protected SpringApplicationBuilder
+		 * configure(SpringApplicationBuilder builder) { return
+		 * builder.sources(VodaEomSampleApplication.class); }
+		 */
 
 
 	@Bean
